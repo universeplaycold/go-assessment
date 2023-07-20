@@ -26,7 +26,7 @@ To run the application and perform a cURL request, follow these steps:
 1. Open a terminal or command prompt.
 2. Run the application by executing the following command:
 
-$ go run ./cmd/frameplaygo/main.go
+## $ go run ./cmd/frameplaygo/main.go
 
 This will start the server and it will be listening on port 8081.
 
@@ -35,26 +35,21 @@ This will start the server and it will be listening on port 8081.
 
 $ curl -X POST -d "{"username":"giljohn","email":"giljohn@gmail.com"}" http://localhost:8081/users
 
-This will send a POST request with the specified JSON payload to the `/users` endpoint of the running server.
+## This will send a POST request with the specified JSON payload to the `/users` endpoint of the running server.
 
 5. Observe the output in the terminal where the application is running. It will display the received request and the validated user data.
 
 Please note that the application needs to be running in one terminal while you perform the CURL request in another terminal. This allows you to see the output and simulate the API request.
 
-## SAMPLE OUTPUT 
-C:\go\go-assessment>go run ./cmd/frameplaygo/main.go
-Server listening on port 8081
-Press Enter to exit
-Received a request:
-Username: example
-Email: example@example.com
-Mocking an actual API request call with user: {example example@example.com}
-Successfully called API with user: {example example@example.com}
-Received a request:
-Username: example
-Email: example@example.com
-Mocking an actual API request call with user: {example example@example.com}
-Successfully called API with user: {example example@example.com}
+## SAMPLE OUTPUT IN CMD
+1. C:\go\go-assessment>go run ./cmd/frameplaygo/main.go
+2. Server listening on port 8081
+3. Press Enter to exit
+4. Received a request:
+5. Username: example
+6. Email: example@example.com
+7. Mocking an actual API request call with user: {example example@example.com}
+8. Successfully called API with user: {example example@example.com}
 
 ## Thought Process and Architectural Considerations
 
